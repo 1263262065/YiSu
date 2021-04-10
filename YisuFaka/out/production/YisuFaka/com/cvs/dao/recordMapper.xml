@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cvs.dao.recordMapper">
+    <select id="sumrecord" resultType="int" >
+        SELECT COUNT(*) FROM record
+    </select>
+    <select id="sumprice" resultType="int" >
+        SELECT SUM(price) FROM record
+    </select>
+    <select id="dayrecord" resultType="int">
+        SELECT COUNT(*) FROM record WHERE DATE_FORMAT(DATE,'%Y/%m/%d')=CURRENT_DATE
+    </select>
+    <select id="dayprice" resultType="int">
+       SELECT SUM(price) FROM record WHERE DATE_FORMAT(DATE,'%Y/%m/%d')=CURRENT_DATE
+    </select>
+</mapper>
+
+

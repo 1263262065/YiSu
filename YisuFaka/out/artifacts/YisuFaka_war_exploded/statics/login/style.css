@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+
+
+    /* 背景颜色为自定义属性 --white	 */
+    background-color: var(--white);
+
+    /* 背景图片	 */
+    background: url("background_oeuhe7.jpg");
+
+    /* 	背景固定。即使一个元素拥有滚动机制，背景也不会随着元素的内容滚动。 */
+    background-attachment: fixed;
+
+    /* 	图片居中 */
+    background-position: center;
+
+    /* 	background-repeat定义背景图像的重复方式，no-repeat背景图像将仅显示一次 */
+    background-repeat: no-repeat;
+
+    /* 把背景图片放大到适合元素容器的尺寸	 */
+    background-size: cover;
+
+    /* 网格布局	 */
+    display: grid;
+
+    /* 设置height:100vh，能够保证元素无论是否有没有内容，高度都等于屏幕高度。	 */
+    height: 100vh;
+
+    /* 沿着对齐容器的中心对齐。	 */
+    place-items: center;
+}
+h2{
+    font-size: 18px;
+
+
+    color: #000000;
+
+    padding-left: 50px;
+    font-family: "微软雅黑";
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to right, #344fff, #b6ff6a);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.txt{
+    margin: 30px 0px;
+    border-bottom: 2px solid #435b99;
+
+
+}
+.btn{
+    outline: none;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    border-radius: 25px;
+    border: 1px solid transparent;
+    color:white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.9rem 4rem;
+    text-transform: uppercase;
+    margin-left: 15px ;
+
+}
+#from{
+    position: relative;
+    top: -30px;
+}
+#login{
+    border: 1px solid transparent;
+
+    width: 300px;
+    height: 350px;
+    padding: 50px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+    border-radius: 10px ;
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.5),
+    0 0.7rem 0.7rem rgba(0, 0, 0, 0.3);
+
+}
+.i-user-border{
+    position: relative;
+    top: 20px;
+    right:20px;
+}
+.i-view{
+    position: relative;
+    top: 20px;
+    right:20px;
+}
+.i-weixin {
+    border-radius: 25px;
+    border: none;
+    margin: 20px;
+    outline: none;
+}
+.i-qq-new{
+    border-radius: 25px;
+    border: none;
+    margin-left:50px;
+    outline: none;
+}
+
+input::-webkit-input-placeholder{
+    color: #000000;
+}
